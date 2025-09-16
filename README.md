@@ -1,37 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ✉️ Resend Email - Contact Form Integration
 
-## Getting Started
+A simple and modern **Contact Form** built with Next.js, React, and TailwindCSS that integrates with **Resend API** to send emails seamlessly.  
+This project demonstrates how to collect user details (name, email, contact number, message) and forward them via email using **Resend**.
 
-First, run the development server:
+1[image](https://github.com/SonuR12/Resend-Email/blob/main/public/images/Demo.png)
+---
+
+## 🚀 Features
+- 📩 Send emails directly from the contact form  
+- 🎨 Modern UI with TailwindCSS  
+- 🔒 Secure email handling with Resend  
+- ✅ Form validation for better user experience  
+- 🌍 Ready to deploy on **Vercel**  
+
+---
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Resend-Email/
+│── public/ # Static assets
+│── src/
+│ ├── app/
+│ │ ├── api/
+│ │ │ └── send/ # API route for sending emails with Resend
+│ │ ├── components/
+│ │ │ └── ContactForm.tsx # Contact form component
+│ │ ├── page.tsx # Main page
+│ │ └── layout.tsx # Root layout
+│ ├── styles/ # Global styles
+│── .env.local # Environment variables (Resend API key)
+│── package.json # Dependencies and scripts
+│── tailwind.config.js # TailwindCSS configuration
+│── README.md # Documentation
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SonuR12/Resend-Email.git
+   cd Resend-Email
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Add your Resend API Key in .env.local:
+   ```bash
+    RESEND_API_KEY=your_resend_api_key_here
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Run the development server:
+   ```bash
+    npm run dev
+   ```
+5. Open http://localhost:3000 in your browser 🚀
 
-## Deploy on Vercel
+   ---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📧 Email Sending (Resend API)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Resend-Email
+- The form submits data to `/api/send`  
+- The API route uses the **Resend SDK** to send emails to your inbox  
+- Example email format:
+From: John Doe john.doe@example.com
+Contact: +91 XXXXXXXX
+Message: "Tell us about your travel plans or questions..."
+
+---
+
+## 📌 Tech Stack
+- [Next.js](https://nextjs.org/)  
+- [React](https://react.dev/)  
+- [TailwindCSS](https://tailwindcss.com/)  
+- [Resend](https://resend.com/)  
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
