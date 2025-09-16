@@ -3,7 +3,7 @@
 A simple and modern **Contact Form** built with Next.js, React, and TailwindCSS that integrates with **Resend API** to send emails seamlessly.  
 This project demonstrates how to collect user details (name, email, contact number, message) and forward them via email using **Resend**.
 
-1[image](https://github.com/SonuR12/Resend-Email/blob/main/public/images/Demo.png)
+![image](https://github.com/SonuR12/Resend-Email/blob/main/public/images/Demo.png)
 ---
 
 ## 🚀 Features
